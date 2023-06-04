@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="height: 100%;" lang="en" >
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/homepage.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/ratings.css')}}">
+        
+        <title> Movie Recommender</title>
+    </head>
+
+    <body>
+        <div class = "main_body">
+            <div class="left-div">
+                <img class="left-img" src = "{{ url_for('static', filename='images/drama-movie.gif') }}">
+            </div>
+            <div class="right-div">
+                <h1 class="h1">Movie Recommender</h1> 
+                <label class="h3" for="num">Please rate your selected movies:</label>
+                <form class="recomm" action="/recommendations">
+                    {% for movie in movie_list %}
+                        <br>
+                        {{movie}}
+                        <input id="num" type="number" name="{{movie}}" min=0 max=5 step=0.5 value=0 required>
+                        <br>
+                        {% endfor %}
+                    <br>
+                    <input type="submit" value="Click Me!" class='button'>
+                </form>
+
+                <p class="p1">
+                    Did you forget some movies? <br>
+                    Click <a href="/">here</a> to back to the previous page.
+                </p>   
+            </div>
+        </div>
+    </body>
+</html>

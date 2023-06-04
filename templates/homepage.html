@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html style="height: 100%;">
+    <head>
+        <title>Watch me!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/homepage.css')}}">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body style="background-image: url('static/images/background-image.jfif');">
+        <div class="main">
+            
+            <div class="left-div">
+            <img class="left-img" src = "{{ url_for('static', filename='images/drama-movie.gif') }}">
+            </div>
+            <div class="right-div">
+                <div>
+                    <h1 class="h-text">Movies Recommender</h1>
+                    <label for="movie1" class="h2-text">Rate as many as possible, Let's us catch your taste!</label>
+                    <form action="/rating" method ="POST">
+                        <input id="movie1" class="movie-list" type="text" name="movielist" placeholder="List of movies. e.g. Aladdin,Forrest Gump,The Matrix" required>
+                        <input class= "next-button" type="submit" value="Next"  class='button'>
+                    </form>
+
+            </div>
+        </div>
+
+    </body>
+</html>

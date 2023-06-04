@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="height: 100%;" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/result.css')}}">
+  <title>Watch Me!!!!</title>
+</head>
+
+<body>
+    <div class = "main">
+        <div class="left-div">
+            <h1 class="h1">Watch Me!!!!</h1>
+            <h3 class="h3">Movies mached your taste....</h3>
+        </div>
+        <div class="right-div">
+            <div class="grid">
+                <div class="poster-container">
+        
+                    {% for movie,poster in movies.items() %}
+                    <a href="#" data-title='{{movie}}'>
+                    <img class="grid-img " src='{{poster}}' height=180px >
+                    </a>
+                    <br>
+                    {% endfor %}
+               </div >
+               <p class="p1"> Click <a href="/">here</a> to get to the homepage.</p>
+            </div>
+        </div>
+            
+     </div>
+     
+    
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-image: url("static/images/background-image.jfif");
+    height: 100%;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    flex-direction: column;
+    
+
+}
+.left-div{
+    color: white;
+    align-items: center;
+    flex: 25%;
+    
+}
+.left-img {
+    margin-top: 100px;
+    width: 90%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.right-div{
+    color: white;
+    flex: 60%;
+    
+    
+    
+}
+.h-text {
+    font-size: 60px;
+    margin-top: 80px;
+    margin-left: 60px;
+
+}
+.h2-text {
+    margin-left:100px ;
+    margin-top: 110px;
+}
+.movie-list {
+    margin-left: 100px;
+    width: 350px;
+    height: 30px;
+}
+.next-button {
+    background-color: rgb(226, 217, 217);
+    border: none;
+    margin-left: 230px;
+    margin-top: 30px;
+    width: 100px;
+    padding: 10px 10px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
