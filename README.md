@@ -24,9 +24,9 @@ python app.py
 
 The user can access the website using their web browser and create an account, rate movies, and receive movie recommendations based on their ratings. The website also displays movie information and ratings using the IMDb API.
 
-#Output:
+# Output:
 The application will output a list of recommended movies for the user, along with their predicted ratings. The list will be sorted in descending order based on the predicted ratings, with the highest rated movies appearing first. 
 
-Conclusion:
+# Conclusion:
 The Movies Recommender System Website is a powerful tool for suggesting movies to users based on their viewing history. By using collaborative filtering and the IMDb API, the application can accurately predict which movies a user is likely to enjoy and display detailed information about each movie. With the ability to create an account, rate movies, and receive recommendations, the website provides a personalized experience for each user. The ml-latest-small dataset is a popular choice for testing the application and can be easily integrated into the program.
 
